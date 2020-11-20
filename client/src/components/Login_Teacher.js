@@ -18,7 +18,7 @@ const Login = ({setAuth}) => {
         try {
             const body = { email, password};
             const response = await fetch(
-              "/login/Teachers",
+              "http://localhost:3005/login/Teachers",
               {
                 method: "POST", 
                 headers: {

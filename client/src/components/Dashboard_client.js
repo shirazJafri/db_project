@@ -6,7 +6,7 @@ const Dashboard = ({setAuth}) => {
     let history = useHistory();
 const getProfile = async () => {
     try {
-      const res = await fetch("/dashboard2/", {
+      const res = await fetch("http://localhost:3005/dashboard2/", {
         method: "GET",
         headers: { token: localStorage.token }
       });
